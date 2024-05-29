@@ -16,8 +16,6 @@ functions:
     package:
       artifact: bin/deployment.zip
     events:
-      - http:
-          path: /albums
-          method: get
+      - httpApi: '*'
     environment:
       GIN_MODE: release
